@@ -13,6 +13,8 @@ public class CollisionHandler : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
 
+        bool isTransitioning = false;
+
         switch (other.gameObject.tag)
         {
             case "Friendly":

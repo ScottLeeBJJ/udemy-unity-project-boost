@@ -15,8 +15,6 @@ public class Movement : MonoBehaviour
     Rigidbody rb;
     AudioSource audioSource;
 
-    bool isAlive;
-
     // Start is called before the first frame update
     void Start()
     {
