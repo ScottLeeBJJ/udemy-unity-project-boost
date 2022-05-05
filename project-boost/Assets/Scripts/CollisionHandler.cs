@@ -26,9 +26,6 @@ public class CollisionHandler : MonoBehaviour
                 break;
         }
     }
-    
-        // add sound effect upon crash
-        // add particle effect upon crash
 
     void StartSuccessSequence()
     {
@@ -39,9 +36,6 @@ public class CollisionHandler : MonoBehaviour
 
     void StartCrashSequence()
     {
-        // add sound effect upon crash
-        // add particle effect upon crash
-
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
         audioSource.PlayOneShot(crashSound);
